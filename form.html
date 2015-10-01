@@ -7,26 +7,26 @@
 </head>
 <body>
 	<header class="page-header">
-		<div class="container clearfix">
-			<div class="logo">
+		
+			<div class="page-header__logo logo">
 				<a href='#'><img src="#" width="70" height="25" alt='Pink'></a>
 			</div>
-			<nav class="page-header__menu">
+			<nav class="page-header__menu main-menu">
 					<ul>
-						<li class="page-header__menu--item">
-							<a class="page-header__menu--link" href="#">Информация</a>
+						<li class="main-menu__item">
+							<a class="main-menu__link" href="#">Информация</a>
 						</li>
-						<li class="page-header__menu--item">
-							<a class="page-header__menu--link" href="#">Блог</a>
+						<li class="main-menu__item">
+							<a class="main-menu__link" href="#">Блог</a>
 						</li>
-						<li class="page-header__menu--item">
-							<a class="page-header__menu--link" href="#">Отзывы</a>
+						<li class="main-menu__item">
+							<a class="main-menu__link" href="#">Отзывы</a>
 						</li>
-						<li class="page-header__menu--item">
-							<a class="page-header__menu--link" href="#">Конкурс</a>
+						<li class="main-menu__item">
+							<a class="main-menu__link" href="#">Конкурс</a>
 						</li>
 					</ul>
-			</nav
+			</nav>
 
 			<div class="page-header__title">
 				Конкурс на самое
@@ -34,57 +34,55 @@
 				путешествие с Пинк
 			</div>
 
-		</div>
-
 	</header>
 
 	<div class="container">
 		<form class="form">
-			<p>
+			<p class="text text--center">
 				Поделитесь своей историей и получите
 				шанс выиграть ценный приз - 1000
 				миль на вашу бонусную карту
 			</p>
 		
-			<div class="name">
-				<label for="firstname">Имя:*</label>
+			<fieldset class="form__item">
+				<label for="firstname" class="form__label">Имя:*</label>
 				<input class="form__input" type="text" name="firstname" id="firstname" placeholder="Введите ваше имя">
 				
-				<label for="surname">Фамилия:*</label>
+				<label for="surname" class="form__label">Фамилия:*</label>
 				<input class="form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию">
 				
-				<label for="patronymic">Отчество:*</label>
+				<label for="patronymic" class="form__label">Отчество:*</label>
 				<input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
-			</div>
-			<div class="app">
-				<h5>С каким приложением путешествовали?*</h5>
+			</fieldset>
+			<fieldset class="form__item">
+				<legend>С каким приложением путешествовали?*</legend>
 				<input class="form__input" type="radio" name="app" id ="ios" value="Pink для iOS">
-	            <label for="ios">Pink для iOS</label>
+	            <label for="ios" class="form__label">Pink для iOS</label>
 	            
 	            <input class="form__input" type="radio" name="app" id ="android" value="Pink на Android">
-	            <label for="android">Pink на Android</label>
+	            <label for="android" class="form__label">Pink на Android</label>
 	            
 	            <input class="form__input" type="radio" name="app" id ="windows" value="Windows Phone">
-	            <label for="windows">Windows Phone</label>
-			</div>
-			<div class="dates">
-				<h5>Когда вы путешествовали?*</h5>
+	            <label for="windows" class="form__label">Windows Phone</label>
+			</fieldset>
+			<fieldset class="form__item">
+				<legend>Когда вы путешествовали?*</legend>
 				<input class="form__input" type="text" placeholder="1 апреля 2015">
 				
-				<label for="">Дата выезда</label>
+				<label for="" class="form__label">Дата выезда</label>
 				
 				<button>-</button>
 				<input class="form__input" type="text" placeholder="10 дней">
 				<button>+</button>
 				
-				<label for="">Продолжительность</label>
+				<label for="" class="form__label">Продолжительность</label>
 				
 				<input class="form__input" type="text" placeholder="1 апреля 2015">
 				
-				<label for="">Дата возвращения</label>
-			</div>
-			<div class="people">
-				<h5>Количество Попутчиков*</h5>
+				<label for="" class="form__label">Дата возвращения</label>
+			</fieldset>
+			<fieldset class="form__item">
+				<legend>Количество Попутчиков*</legend>
 				<button>-</button>
 				<input class="form__input" type="text" placeholder="2 чел">
 				<button>+</button>
@@ -92,49 +90,51 @@
 				<h5>№</h5>
 				<ol>
 					<li> 
-						<label for="name-of-1">Имя*</label>
+						<label for="name-of-1" class="form__label">Имя*</label>
 						<input class="form__input" type="text" placeholder="Введите ваше имя" id="name-of-1">
-						<label for="nickname-of-1">Прозвище:</label>
+						<label for="nickname-of-1" class="form__label">Прозвище:</label>
 						<input class="form__input" type="text" placeholder="Ну как же без него!" id="nickname-of-1">
 					</li>
 					<li>
-						<label for="name-of-2">Имя*</label>
+						<label for="name-of-2" class="form__label">Имя*</label>
 						<input class="form__input" type="text" placeholder="Введите ваше имя" id="name-of-2">
-						<label for="nickname-of-2">Прозвище:</label>
+						<label for="nickname-of-2" class="form__label">Прозвище:</label>
 						<input class="form__input" type="text" placeholder="Ну как же без него!" id="nickname-of-2">
 					</li>
 				</ol>
 
-			</div>
-			<div class="achievement">
-				<h5>Ваши безбашенные достижения в путешествии</h5>
-				<input class="form__input" type="checkbox" id="selfie">
-				<label for="selfie">Сделал селфи с акулой</label>
-				<input class="form__input" type="checkbox" id="beach">
-				<label for="beach">Обгорел на пляже</label>
-				<input class="form__input" type="checkbox" id="chuck">
-				<label for="chuck">Виден Чака Норриса</label>
-				<input class="form__input" type="checkbox" id="souvenir">
-				<label for="souvenir">Накупил сувениров</label>
-				<input class="form__input" type="checkbox" id="tower">
-				<label for="tower">Удержал башню</label>
-				<input class="form__input" type="checkbox" id="destroy">
-				<label for="destroy">Разгромил отель</label>
+			</fieldset>
+			<fieldset class="form__item">
+				<legend>Ваши безбашенные достижения в путешествии</legend>
+				<input class="form__checkbox" type="checkbox" id="selfie">
+				<label for="selfie" class="form__label">Сделал селфи с акулой</label>
+				<input class="form__checkbox" type="checkbox" id="beach">
+				<label for="beach" class="form__label">Обгорел на пляже</label>
+				<input class="form__checkbox" type="checkbox" id="chuck">
+				<label for="chuck" class="form__label">Виден Чака Норриса</label>
+				<input class="form__checkbox" type="checkbox" id="souvenir">
+				<label for="souvenir" class="form__label">Накупил сувениров</label>
+				<input class="form__checkbox" type="checkbox" id="tower">
+				<label for="tower" class="form__label">Удержал башню</label>
+				<input class="form__checkbox" type="checkbox" id="destroy">
+				<label for="destroy" class="form__label">Разгромил отель</label>
 
-			</div>
-			<div class="pics">
-				<h5>Ваши фотографии из поедки*</h5>
-				<input class="form__input" type="file">
-			</div>
-			<button class="form__input" type='submit' class='btn'>Отправить форму</button>
-			<p>* - обязательные поля</p>
+			</fieldset>
+
+			<fieldset class="form__item">
+				<legend>Ваши фотографии из поедки*</legend>
+				<input class="form__btn" type="file">
+			</fieldset>
+			<button class="form__submit" type='submit' class='btn'>Отправить форму</button>
+			<p class="text"><span class="text--color_red">*</span>обязательные поля</p>
+			
 		</form>
 	</div>
 		<footer class="page-footer">
 
 			<img class="page-footer__image" src="" alt="Logo" width="" height="">
 
-			<div class="social">
+			<div class="footer__social social">
 				<a class="social__item" href="#">Twitter</a>
 				<a class="social__item" href="#">Facebook</a>
 				<a class="social__item" href="#">Vimeo</a>
