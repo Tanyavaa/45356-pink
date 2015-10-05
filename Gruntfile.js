@@ -31,13 +31,33 @@ module.exports = function(grunt) {
         tasks: ['less', 'postcss'],
         options: {
           spawn: false,
-          livereload: true
+          livereload: 35729
         }
       }
-    }
+    },
+
+    browserSync: {
+           dev: {
+               bsFiles: {
+                   src : [
+                       'css/*.css',
+                       '*.html'
+                   ]
+               },
+               options: {
+                   watchTask: true,
+                   server: './',
+                   open: false
+               }
+           }
+       }
   };
 
   config = require('./.gosha')(grunt, config);
 
   grunt.initConfig(config);
+
+   grunt.registerTask('default', ['browserSync', 'watch']);
+
 };
+
