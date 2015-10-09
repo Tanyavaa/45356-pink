@@ -1,50 +1,51 @@
 table {
-    position:relative;
     display: table;
-    min-width: 320px;
     border-collapse: collapse;
-    border: 3px solid @color-light-grey;
+    border: 2px solid @border-grey;
 }
 
-table b {
+table b{
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
+    font-family:@font-family;
+
 }
 th {
     background: @color-blue;
-    border: 2px solid @color-light-grey;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    border: 2px solid @border-grey;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: @color-white;
+    font-family:@font-family;
+
 }
-tr {
+td {
     background: @color-white;
-    border: 2px solid @color-light-grey;
+    border: 2px solid @border-grey;
+    min-width:276px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-family:@font-family;
+
+
 }
-table p {
+table p{
     text-align: left;
-    padding-left: 20px;
+    text-transform: uppercase;
+    padding-left: 24px;
+    font-family: @font-family;
+    font-size: 14px;
 }
 
-.table-controls {
-    position:absolute;
-    bottom:90px;
-    left:50%;
-    width:200px;
-    height:10px;
-    bottom:70%;
+.price-table__price {
+    color:white;
+    font-family: @font-family;
+    font-size: 24px;
+    text-transform: uppercase;
+
 }
-.table-controls label{
-    display:inline-block;
-    width:4px;
-    height:4px;
-    margin:0 3px;
-    background:white;
-    border:3px solid white;
-    vertical-align:top;
-    border-radius:50%;
-    cursor:pointer;
-}
-.slider-controls .active{
-    background:@color-pink;
+.price-table {
+    width:320px;
+    height:320px;
+    overflow: hidden;
 }

@@ -58,7 +58,7 @@
 				<label for="patronymic" class="form__label">Отчество:*</label><br>
 				<input class="form__input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже"><br>
 			</fieldset>
-			<fieldset class="form__item">
+			<fieldset class="form__item form__item--bg-grey">
 				<legend class="form__legend">С каким приложением путешествовали?*</legend>
 				<input class="form__radio" type="radio" name="app" id ="ios" value="Pink для iOS">
 	            <label for="ios" class="form__label-radio">Pink для iOS</label><br>
@@ -74,12 +74,12 @@
 				<input class="form__input" type="text" placeholder="1 апреля 2015"><br>
 				
 				<label for="" class="form__label">Дата выезда</label><br>
-				
-				<button class="plus-minus">-</button>
-				<input class="form__input" type="text" placeholder="10 дней">
-				<button class="plus-minus">+</button>
+				<div class="form__plus-minus">
+				<button class="form__plus-minus-button">-</button>
+				<input class="form__input form__plus-minus-input" type="text" placeholder="10 дней">
+				<button class="form__plus-minus-button">+</button>
+				</div>
 				<br>
-				
 				<label for="" class="form__label">Продолжительность</label>
 				<br>
 				<input class="form__input" type="text" placeholder="1 апреля 2015"><br>
@@ -88,9 +88,11 @@
 			</fieldset>
 			<fieldset class="form__item">
 				<legend class="form__legend">Количество Попутчиков*</legend><br>
-				<button class="plus-minus">-</button>
-				<input class="form__input" type="text" placeholder="2 чел">
-				<button class="plus-minus">+</button>
+				<div class="form__plus-minus">
+				<button class="form__plus-minus-button">-</button>
+				<input class="form__input form__plus-minus-input" type="text" placeholder="2 чел">
+				<button class="form__plus-minus-button">+</button>
+				</div>
 				<br>
 				<h5>№</h5>
 				<ol>

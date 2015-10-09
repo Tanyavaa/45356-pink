@@ -2,25 +2,22 @@
 .features {
     padding-left: 50px;
     padding-right: 50px;
-    &__title {
-        font: 18px, @font-family;
+
+    &__title{
+        font-size: 18px;
+        font-family: @font-family;
     }
     
     &__item p {
-        font: 14px, @font-family;
+        font-size: 14px; 
+        font-family:@font-family;
+        line-height: 30px;
     }
-    
-    &__opinion h2 {
-        font: 18px, @font-family;
-    }
-    
-    &__opinion {
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-    
     &__opinion p {
-        font: 14px, @font-family;
+        font-size: 14px;
+        font-family:@font-family;
+        line-height: 30px;
+        text-align: center;
     }
 }
 
@@ -31,4 +28,9 @@
     &__item {
         padding-bottom: 20px;
     }
+}
+.opinion__title {
+    font: 18px; 
+    font-family:@font-family;
+    padding-top: 50px;
 }

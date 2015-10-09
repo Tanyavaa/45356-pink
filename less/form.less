@@ -1,14 +1,14 @@
 .form {
-	padding-left:20px;
-	padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     display: block;
     background: @color-white;
-    margin:auto;
-    
-	&__label, &__input {
-		text-align:left;
-	}
-    &__label{
+    margin: auto;
+    &__label,
+    &__input {
+        text-align: left;
+    }
+    &__label {
         color: @color-pink;
         text-transform: uppercase;
         font-size: 14px;
@@ -16,16 +16,19 @@
         font-family: @font-family;
     }
     &__legend {
-    	text-align: center;
+        text-align: center;
         color: @color-pink;
         text-transform: uppercase;
         font-size: 14px;
         font-family: @font-family;
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-top: 20px;
+        line-height: 18px;
     }
     &__item {
         border: 0;
     }
-    
     &__input {
         display: inline-block;
         width: 278px;
@@ -40,7 +43,6 @@
         color: @color-blue-dark;
         font-family: @font-family;
     }
-
     &__label-checkbox,
     &__label-radio {
         color: black;
@@ -51,22 +53,21 @@
         font-family: @font-family;
     }
     &__submit {
-    	display:block;
-    	border:0;
-    	background: @color-green;
-    	color:@color-white;
-    	border-radius: 3px;
-    	padding-top: 19px;
-    	padding-bottom: 19px;
-    	padding-left: 48px;
-    	padding-right: 48px;
-    	box-sizing:border-box;
-    	text-align: center;
-    	font-size: 18px;
-    	text-transform: uppercase;
-    	font-weight: bold;
-    	font-family: @font-family;
-
+        display: block;
+        border: 0;
+        background: @color-green;
+        color: @color-white;
+        border-radius: 3px;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        padding-left: 48px;
+        padding-right: 48px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: @font-family;
     }
 }
 
@@ -76,12 +77,61 @@
     text-align: center;
     color: @color-blue;
     box-sizing: border-box;
+    line-height: 30px;
 }
+
 .plus-minus {
-    display:block;
-    border:2px solid @border-grey;
-    background:@color-white;
-    padding:5px;
+    display: block;
+    border: 2px solid @border-grey;
+    background: @color-white;
+    padding: 5px;
     font-size: 30px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+.form__item--bg-grey {
+    background: @form-bg;
+}
+
+.form__item {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.form__plus-minus {
+    width: 320px;
+}
+
+.form__plus-minus {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.form__plus-minus-button {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    border: 2px solid @border-grey;
+    background: @color-white;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+.form__plus-minus-input {
+    display: inline-block;
+    width: 160px;
+    height: 46px;
+    margin-left: -5px;
+    margin-right: -5px;
+    border-right: none;
+    border-left: none;
+    text-align: center;
     box-sizing: border-box;
 }
