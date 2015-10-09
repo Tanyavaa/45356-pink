@@ -3,15 +3,18 @@
 <head>
 	<meta charset='utf-8'>
 	<title>Pink</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel='stylesheet' href='css/style.css'>
-	<link rhref='<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>'
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
-	<header class="page-header container clearfix">
+	<header class="page-header">
+		<div class="page-header__background container clearfix">
 			<div class="page-header__logo logo">
 				<a href='#'><img src="#" width="70" height="25" alt='Pink'></a>
 			</div>
+		</div>	
 			<nav class="page-header__menu main-menu">
 					<ul>
 						<li class="main-menu__item">
@@ -42,7 +45,7 @@
 			Windows Phone, OS X, Windows 8</h3>
 		</div>
 	</header>
-	<div class="main-content container">
+	<div class="main-content container clearfix">
 		<div class="titles">
 			<h2 class="main-content__title">Устали от серости<br>
 				мегаполиса?</h2>
@@ -109,6 +112,13 @@
 					<p>Комментарии</p>
 				</td>	
 				</tr>
+				<input type='radio' id='btn-1' name='toggle' checked>
+		    	<input type='radio' id='btn-2' name='toggle'>
+		    	<input type='radio' id='btn-3' name='toggle'>
+		    	<div class='table-controls'>
+		        <label for='btn-1'></label>
+		        <label for='btn-2'></label>
+		        <label for='btn-3'></label>
 			</table>
 		</div>
 		<div class="contacts">

@@ -1,0 +1,87 @@
+.form {
+	padding-left:20px;
+	padding-right: 20px;
+    display: block;
+    background: @color-white;
+    margin:auto;
+    
+	&__label, &__input {
+		text-align:left;
+	}
+    &__label{
+        color: @color-pink;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding-left: 20px;
+        font-family: @font-family;
+    }
+    &__legend {
+    	text-align: center;
+        color: @color-pink;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: @font-family;
+    }
+    &__item {
+        border: 0;
+    }
+    
+    &__input {
+        display: inline-block;
+        width: 278px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 2px solid @border-grey;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        border-radius: 3px;
+        font-size: 18px;
+        color: @color-blue-dark;
+        font-family: @font-family;
+    }
+
+    &__label-checkbox,
+    &__label-radio {
+        color: black;
+        padding-left: 40px;
+        line-height: 70px;
+        color: @color-blue;
+        font-size: 18px;
+        font-family: @font-family;
+    }
+    &__submit {
+    	display:block;
+    	border:0;
+    	background: @color-green;
+    	color:@color-white;
+    	border-radius: 3px;
+    	padding-top: 19px;
+    	padding-bottom: 19px;
+    	padding-left: 48px;
+    	padding-right: 48px;
+    	box-sizing:border-box;
+    	text-align: center;
+    	font-size: 18px;
+    	text-transform: uppercase;
+    	font-weight: bold;
+    	font-family: @font-family;
+
+    }
+}
+
+.text {
+    font-family: @font-family;
+    font-size: 14px;
+    text-align: center;
+    color: @color-blue;
+    box-sizing: border-box;
+}
+.plus-minus {
+    display:block;
+    border:2px solid @border-grey;
+    background:@color-white;
+    padding:5px;
+    font-size: 30px;
+    box-sizing: border-box;
+}

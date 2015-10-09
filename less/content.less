@@ -1,6 +1,7 @@
-.main-content__title{
-	font:24px, @font-family;
-}
+.main-content
+	&__title{
+		font:24px, @font-family;
+	}
 
 .features { 
 	padding-left:50px;
@@ -29,29 +30,33 @@ h1, h2, h3, p{
 }
 
 	
-	.features {
+.features {
 	background:@color-light-grey;
 	padding-top: 30px;
 	padding-bottom: 30px;
+
 	&__item {
-	padding-bottom:20px;
+		padding-bottom:20px;
 	}
 }
 
 .opinion {
 	padding-top: 30px;
 	padding-bottom: 30px;
+
 	&__title {
 		font:24px, @font-family;
 	}
+
 	&__text {
 		font:14px, @font-family;
 	}
 
-	}
+}
 
 table {
-	width:320px;
+	display:table;
+	min-width:320px;
 	border-collapse: collapse;
 	border:3px solid @color-light-grey;
 }
@@ -65,8 +70,7 @@ th {
 	border:2px solid @color-light-grey;
 	padding-top:15px;
 	padding-bottom:15px;
-	color:@color-white;
-	
+	color:@color-white;	
 }
 
 
