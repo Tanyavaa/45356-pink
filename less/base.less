@@ -19,7 +19,18 @@
 html {
     font-family: @font-family;
 }
+.clearfix {
+    content:'';
+    display:table;
+    clear:both;
+}
 
+.container {
+    width:100%;
+    margin:auto;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
 a {
     text-decoration: none;
 }
@@ -27,5 +38,13 @@ h1,
 h2,
 h3,
 p {
+    text-align: center;
+}
+.line {
+    color:@border-grey;
+    size:1px;
+    width:280px;
+    fill:@color-white;
+    stop-color:@color-white;
     text-align: center;
 }

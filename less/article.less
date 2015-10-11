@@ -9,7 +9,6 @@
     &__header {
         padding-top: 40px;
         padding-bottom: 30px;
-        border-bottom: 1px solid @border-grey;
         text-align: center;
     }
     &__public-date {
@@ -20,10 +19,34 @@
     }
 }
 
+
 .article p {
     font-size: 16px;
     color: @color-blue;
     line-height: 27px;
+}
+.article li {
+    list-style-type: none;
+    position: relative;
+    padding-top: 40px;
+    font-size: 18px;
+    font-family: @font-family;
+}
+.article li:last-child{
+    padding-bottom: 40px;
+}
+.article li::after {
+    content: "";
+    position: absolute;
+    display:block;
+    top:47px;
+    left:-20px;
+    border-radius: 100px;
+    width:6px;
+    height:6px;
+    z-index:10000;
+    background: @color-pink;
+
 }
 
 .article h2 {
@@ -52,12 +75,6 @@
 
 }
 
-.navigation {
-	&__link {
-		display:block;
-		border:2px solid @border-grey;
-	}
-}
 .blockquote {
 	border-left:2px solid @color-pink;
 	padding-left:10px;
