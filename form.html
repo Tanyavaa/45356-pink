@@ -6,12 +6,12 @@
     <title>Pink</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel='stylesheet' href='css/style.css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-</head>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'></head>
 
 <body>
     <header class="page-header">
-        <div class="page-header__background container clearfix">
+    <div class="container clearfix">
+        <div class="page-header__background">
             <div class="page-header__logo logo">
                 <a href='#'><img src="#" width="70" height="25" alt='Pink'></a>
             </div>
@@ -34,6 +34,7 @@
         </div>
         <div class="page-header__title">
             Конкурс на самое безбашенное путешествие с Пинк
+        </div>
         </div>
     </header>
     <form class="form">
@@ -105,6 +106,7 @@
                         <label for="nickname-of-1" class="form__label">Прозвище:</label>
                         <br>
                         <input class="form__input" type="text" placeholder="Ну как же без него!" id="nickname-of-1">
+                        <br>
                     </li>
                     <li>
                         <label for="name-of-2" class="form__label">Имя*</label>
@@ -146,17 +148,19 @@
             </fieldset>
             <button class="form__submit" type='submit' class='btn'>Отправить форму</button>
             <p class="text"><span class="text__color text__color--red">*</span>обязательные поля</p>
-        </div>div>
+        </div>
     </form>
     <footer class="page-footer">
-        <img class="page-footer__image" src="" alt="Logo" width="" height="">
-        <div class="footer__social social">
-            <div class="container clearfix">
-                <a class="social__item" href="#">Tw</a>
-                <a class="social__item" href="#">Fb</a>
-                <a class="social__item" href="#">Vm</a>
+        <div class="container clearfix">
+            <img src="#" width="170" height="40">
+            <div class="footer__social social">
+                <div class="container clearfix">
+                    <a class="social__item" href="#">Tw</a>
+                    <a class="social__item" href="#">Fb</a>
+                    <a class="social__item" href="#">Vm</a>
+                </div>
             </div>
+            <p class="page-footer__legend">Разработано<img src="" alt="htmlacademy" width="" height=""></p>
         </div>
-        <p class="page-footer__legend">Разработано<img src="" alt="htmlacademy" width="" height=""></p>
     </footer>
 </body>

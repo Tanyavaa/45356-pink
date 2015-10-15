@@ -1,0 +1,40 @@
+.pagination ul{
+    padding:0;
+    margin:0;
+    margin-bottom:20px;
+    text-align: center;
+    width:100%;
+    @media @tablet {
+        text-align: left;
+    }
+    @media @desktop {
+        text-align: left;
+    }
+}
+
+.pagination__item {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid @border-grey;
+    font-family: @font-family;
+    color: @color-blue;
+    font-size: 18px;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 30px;
+}
+.pagination__item--active {
+    font-family: @font-family;
+    color: @color-blue;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    border: 2px solid @color-pink;
+    line-height: 30px;
+}
