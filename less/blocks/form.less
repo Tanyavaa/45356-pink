@@ -1,7 +1,9 @@
 .form {
     display: block;
     background: @color-white;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
     &__label,
     &__input {
         text-align: left;
@@ -100,10 +102,6 @@
     box-sizing: border-box;
 }
 
-fieldset {
-    width:100%;
-}
-
 .form__item--bg-grey {
     background: @form-bg;
 }
@@ -113,14 +111,6 @@ fieldset {
     padding-bottom: 40px;
 }
 
-.form__plus-minus {
-    width: 320px;
-}
-
-.form__plus-minus {
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
 .form__plus-minus-button {
     display: inline-block;
@@ -136,7 +126,7 @@ fieldset {
 
 .form__plus-minus-input {
     display: inline-block;
-    width: 160px;
+    width: 156px;
     height: 46px;
     margin-left: -5px;
     margin-right: -5px;
@@ -144,4 +134,8 @@ fieldset {
     border-left: none;
     text-align: center;
     box-sizing: border-box;
+}
+
+.form__name-number {
+    position:absolute;
 }
